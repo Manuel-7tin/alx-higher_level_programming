@@ -10,8 +10,19 @@
 
 int check_cycle(listint_t *list)
 {
-	if (list->next)
-		return (1);
-	else
+	listint_t *list1;
+	listint_t *list2;
+
+	if (!list || !list->next)
 		return (0);
+	list1 = list;
+	list2 = list;
+	while (!list2 && !list2->next)
+	{
+		list1 = list1->next->next;
+		list2 = list2->next;
+		if (list1 == list2)
+			return (1);
+	}
+	return (0);
 }

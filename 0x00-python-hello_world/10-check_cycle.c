@@ -13,11 +13,11 @@ int check_cycle(listint_t *list)
 	listint_t *list1;
 	listint_t *list2;
 
-	if (!list || !list->next)
+	if (list == NULL || list->next == NULL)
 		return (0);
 	list1 = list;
 	list2 = list;
-	while (!list2 && !list2->next)
+	while (list1 != NULL && list1->next != NULL)
 	{
 		list1 = list1->next->next;
 		list2 = list2->next;

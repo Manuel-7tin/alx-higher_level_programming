@@ -2,7 +2,7 @@
 def uppercase(str):
     upper_str = ""
     for char in str:
-        char_case = ords(char)
+        char_case = ord(char)
         if char_case > 96 and char_case < 123:
             upper_str += chr(char_case - 32)
         else:

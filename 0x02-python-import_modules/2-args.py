@@ -10,5 +10,5 @@ if __name__ == "__main__":
         print("{}: {}".format(1, argv[1]))
     elif arg_len > 2:
         print("{} arguments:".format(arg_len-1))
-        for arg in argv:
-            print("{}: {}".format(arg_len-1, arg))
+        for index, arg in enumerate(argv):
+            print("{}: {}".format(index, arg))

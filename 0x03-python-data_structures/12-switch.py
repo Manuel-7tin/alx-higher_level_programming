@@ -4,4 +4,5 @@ b = 10
 c = b
 b = a
 a = c
+
 print("a={:d} - b={:d}".format(a, b))

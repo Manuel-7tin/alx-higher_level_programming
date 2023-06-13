@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
+    if matrix == [[]]:
+        print()
     for listt in matrix:
         for num in listt:
             if listt[len(listt)-1] != num:

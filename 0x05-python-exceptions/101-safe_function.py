@@ -13,5 +13,8 @@ def safe_function(fct, *args):
     except TypeError as err:
         print("Exception:", err, file=sys.stderr)
         return None
+    except OverflowError as err:
+        print("Exception:", err, file=sys.stderr)
+        return None
     else:
         return sum

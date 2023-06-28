@@ -3,6 +3,7 @@
 
 
 class Node:
+    """A node class that creates a node each time it ts called"""
 
     def __init__(self, data, next_node=None):
         self.__data = data
@@ -32,6 +33,7 @@ class Node:
 
 
 class SinglyLinkedList:
+    """creates a singly linked list object when called, allowing nodes to be added"""
 
     def __init__(self):
         self.__head = None
